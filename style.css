@@ -1,0 +1,394 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Apply Playfair Display to Headings */
+h1, h2, .section-title {
+    font-family: 'Playfair Display', serif;
+}
+/* Hero Section Styling */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1A1A2E; /* Navy Blue Background */
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 2rem auto;
+    width: 90%; /* Center the section */
+}
+
+.hero-content {
+    flex: 1;
+    color: #F5F5F5; /* Light text color */
+    padding-right: 2rem;
+    text-align: left; /* Align text to the left */
+}
+
+.hero-title {
+    font-size: 3.5rem; /* Bigger font size */
+    color: #FF6A88; /* Pink accent */
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+}
+
+.hero-title span {
+    color: #FFC857; /* Gold color for name */
+}
+
+.hero-subtitle, .hero-location {
+    font-size: 1.2rem;
+    color: #D3D3D3; /* Soft gray for readability */
+    margin-bottom: 1rem;
+}
+
+.hero-links a {
+    font-size: 2rem;
+    margin: 0 1rem;
+    color: #FFC857; /* Gold color for icons */
+    transition: color 0.3s ease;
+}
+
+.hero-links a:hover {
+    color: #FF6A88; /* Pink hover effect */
+}
+
+.hero-image {
+    flex: 0.8; /* Adjust the image size relative to the text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 300px; /* Adjust the size */
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%; /* Make the image circular */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.hero-description {
+    font-size: 1rem;
+    color: #D3D3D3; /* Light gray text for readability */
+    margin: 1rem 0;
+    line-height: 1.6; /* Better spacing for text */
+}
+
+
+/* Apply Roboto to Body Text */
+body, p {
+    font-family: 'Roboto', sans-serif;
+    color: #333; /* Example text color */
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    
+    background: white;/*#002B5B*/
+} /*it's bg color everything except header and footer*/
+
+/* Header */
+header {
+    background: white;/*bg color for hero section*/
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;#1A1A2E
+    text-align: center;
+}
+
+header nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: #1A1A2E;
+}
+
+.logo h1 {
+    color: #FF6A88; /*prachi S*/
+    font-size: 2.0rem;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+.nav-links a {
+    color: #FF6A88; /* Default pink color */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem 1rem; /* Add padding to create the box effect */
+    border-radius: 8px; /* Rounded corners for the box */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-links a:hover {
+    background-color: #FFFFFF; /* White background on hover */
+    color: #002B5B; /* Dark text color */
+}
+
+
+
+.section-title {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2rem;
+    color: #002B5B;
+}/*dont know why this sections used*/
+/* Skillset Section */
+#skillset {
+    padding: 4rem 2rem;
+    background: #1A1A2E; /* Dark background */
+    color: #F5F5F5; /* Light text color */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 2rem auto;
+    width: 90%;
+}
+
+#skillset h2 {
+    font-size: 2.5rem;
+    color: #FF6A88; /* Accent color */
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 2rem;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.skills-category {
+    width: 250px;
+    background: #F5F5F5;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.skills-category h3 {
+    font-size: 1.5rem;
+    color: #FF6A88;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.skills-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-category li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #1A1A2E;
+}
+
+.skills-category li img {
+    width: 24px;
+    height: 24px;
+    margin-right: 1rem;
+    border-radius: 5px;
+}
+
+
+
+/* Projects Section */
+#projects {
+    padding: 4rem 2rem;
+    background: #1A1A2E; /* Dark blue background for consistency */
+    color: #F5F5F5; /* Light text for contrast */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 2rem auto;
+    width: 90%; /* Center the section */
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    color: #FF6A88; /* Accent color for the title */
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
+    margin-bottom: 2rem;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.project-card {
+    background: #FFFFFF; /* White card background */
+    color: #1A1A2E; /* Dark text for contrast */
+    padding: 1.5rem;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #FF6A88; /* Accent color for project names */
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #333; /* Dark text for readability */
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #FF6A88;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+    color: #070707; /* Slightly darker hover color */
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section */
+#contact {
+    padding: 4rem 2rem;
+    background: #1A1A2E; /* Dark blue background for consistency */
+    color: #F5F5F5; /* Light text for contrast */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 2rem auto;
+    width: 90%; /* Center the section */
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #FF6A88; /* Accent color for the title */
+    font-family: 'Playfair Display', serif; /* Elegant font */
+    margin-bottom: 2rem;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: #F5F5F5; /* Light gray for better readability */
+}
+
+#contact a {
+    color: #F5F5F5; /* Gold accent for links */
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #FF6A88; /* Slightly darker gold on hover */
+}
+
+.contact-icons {
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.contact-icons a {
+    margin: 0 1rem;
+    color: #FF6A88;
+    transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+    color: #FF6A88; /* Accent color on hover */
+}
+
+/* Resume Section */
+#resume {
+    padding: 4rem 2rem;
+    background: #1A1A2E; /* Dark blue for consistency */
+    color: #F5F5F5; /* Light text */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 2rem auto;
+    width: 90%; /* Center the section */
+}
+
+#resume h2 {
+    font-size: 2.5rem;
+    color: #FF6A88; /* Accent color */
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 2rem;
+}
+
+#resume p {
+    font-size: 1.2rem;
+    color: #F5F5F5; /* Light gray for readability */
+    margin-bottom: 1.5rem;
+}
+
+#resume a.cta {
+    display: inline-block;
+    background: #FF6A88;
+    color: #1A1A2E; /* Dark text for contrast */
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#resume a.cta:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #1A1A2E; /* Deep navy blue */
+    color: rgb(255, 255, 255);/*idk for whats it used*/
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
